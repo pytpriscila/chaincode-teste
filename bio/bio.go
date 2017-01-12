@@ -39,7 +39,7 @@ func (t *SimpleChaincode) Init(stub shim.ChaincodeStubInterface, function string
 func (t *SimpleChaincode) Invoke(stub shim.ChaincodeStubInterface, function string, args []string) ([]byte, error) {
 	fmt.Println("invoke is running " + function)
 
-	var a,b,c,d string
+	var a,b string
 
 	a = args[0]
 	b = args[1]
